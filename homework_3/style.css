@@ -1,0 +1,48 @@
+table {
+    width: 1300pt;
+    border: 2px solid;
+    border-collapse: collapse;
+    background-color: rgb(243, 228, 164); 
+    }
+    th {
+    border: 1px solid;
+    font-size: 20pt;
+    background-color: rgb(243, 228, 164); 
+    }
+    td {
+    font-size: 15pt;
+    border: 1px solid;
+   }
+   .number {
+    font-size: 15pt;
+    text-align: right;
+    margin-top: 3mm; 
+    margin-bottom: -7mm;
+    margin-left: 0mm;
+    margin-right: 3mm;
+   }
+   .element {
+    font-size: 18pt;
+    line-height: 28pt;
+    text-align: left;
+    margin-top: 0mm;
+    margin-bottom: 1mm;
+    margin-left: 3mm;
+    margin-right: 0mm;
+   }
+   caption {
+    font-size: 30pt;
+   }
+   span {
+    font-size: 25pt;
+    font-weight: bold;
+   }
+   .blue {
+    background-color: rgb(94, 149, 180);
+   }
+   .yellow {
+    background-color: rgb(218, 233, 80);
+   }
+   .pink {
+    background-color: rgb(235, 107, 171);
+   }
