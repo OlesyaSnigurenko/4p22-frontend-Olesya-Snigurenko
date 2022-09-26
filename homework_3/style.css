@@ -20,11 +20,15 @@
     }
 table {
     width: 1800pt;
+    margin-top: 15px;
     table-layout: fixed;
     border: 2px solid rgb(74, 128, 160);
     border-collapse: collapse;
     background-color: rgb(245, 243, 235);
     box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+    }
+    .continue {
+        margin-top: 50px; 
     }
     th {
     border: 3px solid rgb(74, 128, 160);
