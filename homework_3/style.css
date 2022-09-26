@@ -1,17 +1,39 @@
+.list {
+    font-size: 22pt;
+    color: rgb(37, 30, 8);
+    font-weight: bold;
+    margin: 10pt 100pt 30pt 10pt; 
+}
+.list a {
+    position: relative;
+    display: block;
+    padding: 3pt 3pt 3pt 12pt;
+    margin: 5pt 500pt 5pt 1pt;
+    background: #e9d48e;
+    color: rgb(37, 30, 8);
+    font-size: 20pt;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: .3em;
+    box-shadow: 0.2em 0.2em 3px rgba(97, 77, 23, 0.5);
+    transition: all .3s ease-out;
+    }
 table {
-    width: 1300pt;
-    border: 2px solid;
+    width: 1800pt;
+    table-layout: fixed;
+    border: 2px solid rgb(74, 128, 160);
     border-collapse: collapse;
-    background-color: rgb(243, 228, 164); 
+    background-color: rgb(245, 243, 235);
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
     }
     th {
-    border: 1px solid;
+    border: 3px solid rgb(74, 128, 160);
     font-size: 20pt;
-    background-color: rgb(243, 228, 164); 
+    background-color: rgb(245, 243, 235); 
     }
     td {
     font-size: 15pt;
-    border: 1px solid;
+    border: 3px solid rgb(74, 128, 160);
    }
    .number {
     font-size: 15pt;
@@ -31,7 +53,7 @@ table {
     margin-right: 0mm;
    }
    caption {
-    font-size: 30pt;
+    font-size: 40pt;
    }
    span {
     font-size: 25pt;
@@ -45,4 +67,7 @@ table {
    }
    .pink {
     background-color: rgb(235, 107, 171);
+   }
+   .green {
+    background-color: rgb(42, 124, 55);
    }
