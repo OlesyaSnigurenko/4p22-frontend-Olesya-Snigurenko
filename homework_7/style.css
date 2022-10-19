@@ -178,6 +178,7 @@ body {
         font-size: 14px;
         line-height: 16px;
         margin-left: 34px;
+        padding-top: 2px;
     }
 
     .container-form__label-checkbox::before {
@@ -276,7 +277,7 @@ body {
 
     .container-form__label-checkbox {
         font-size: 18px;
-        line-height: 16px;
+        line-height: 20px;
         margin-left: calc( 32px + (calc(10 / 768 * 100vw)));
     }
 
