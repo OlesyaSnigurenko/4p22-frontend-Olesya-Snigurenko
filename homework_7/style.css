@@ -92,6 +92,7 @@ body {
 .container-form__input-checkbox:checked + .container-form__label-checkbox::before {
     content: '✓';
     color: #1B2473;
+    align-items: center;
 }
 
 .container-form__button {
@@ -192,7 +193,6 @@ body {
     .container-form__input-checkbox:checked + .container-form__label-checkbox::before {
         font-size: 30px;
         font-weight: 700;
-        padding-left: 1px;
     }
 
     .container-form__button {
@@ -292,7 +292,6 @@ body {
 
     .container-form__input-checkbox:checked + .container-form__label-checkbox::before {
         font-size: 38px;
-        padding-left: 2px;
         font-weight: 700;
     }
 
