@@ -211,7 +211,7 @@ body {
 
     .container {
         width: calc(100% - 40px);
-        height: 697px; 
+        height: calc(697 / 737 * 100vh); 
         margin: 20px;
     }
 
