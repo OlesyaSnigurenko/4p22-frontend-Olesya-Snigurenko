@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1B2473;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.container__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form__heading {
+    position: relative;
+    color: #787878;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form__email, .container-form__password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-form__input {
+    position: absolute;
+    border: 2px solid #787878;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+}
+
+.container-form__label {
+    position: absolute;
+    color: #CCCCCC;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container-form__input:focus ~ .container-form__label,
+.container-form__input:not(:placeholder-shown) ~ .container-form__label {
+        line-height: 16px;
+        color: #787878;
+}
+
+.container-form__checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container-form__input-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.container-form__label-checkbox {
+    color: #787878;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container-form__label-checkbox::before {
+    content: '';
+    position: absolute;
+    color: #787878;
+    box-sizing: border-box;
+    border: 2px solid #787878;
+}
+
+.container-form__input-checkbox:checked + .container-form__label-checkbox::before {
+    content: '✓';
+    color: black;
+}
+
+.container-form__button {
+    position: relative;
+    background: #1A226B;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+} 
+
+@media screen and (min-width: 769px) {
+
+    .container {
+        width: 600px;
+        height: 412px; 
+        margin: 15vh auto;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .container__form {
+        top: 0px;
+        width: 510px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .container-form__heading {
+        top: 0px;
+        font-size: 50px;
+        line-height: 50px;
+        margin: 26px auto 20px;
+    }
+
+    .container-form__email, .container-form__password {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0px;
+        height: 81px;
+    }
+
+    .container-form__input {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: 15px;
+        width: 509px;
+        height: 49px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .container-form__label {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .container-form__input:focus ~ .container-form__label,
+    .container-form__input:not(:placeholder-shown) ~ .container-form__label {
+        top: 5%;
+        left: 10px;
+        font-size: 16px;
+    }
+
+    .container-form__checkbox {
+        top: 0px;
+        height: 24px;
+    }
+
+    .container-form__input-checkbox {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .container-form__label-checkbox {
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: 34px;
+    }
+
+    .container-form__label-checkbox::before {
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        border-radius: 7px;
+    }
+
+    .container-form__input-checkbox:checked + .container-form__label-checkbox::before {
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 1px;
+    }
+
+    .container-form__button {
+        top: 52px;
+        height: 52px;
+        width: 180px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 26px;
+        font-size: 24px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: calc(100% - 40px);
+        height: 697px; 
+        margin: 20px;
+    }
+
+    .container__form {
+        top: 0px;
+        width: calc(100% - (calc(90 / 768 * 100vw)));
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .container-form__heading {
+        top: 0px;
+        font-size: 60px;
+        line-height: 50px;
+        margin: 38px auto 22px;
+    }
+
+    .container-form__email {
+        top: 0px;
+        height: 80px;
+    }
+
+    .container-form__password {
+        top: 0px;
+        height: 90px;
+    }
+
+    .container-form__input {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-left: calc( 15 / 768 * 100vw);
+        width: 100%;
+        height: 49px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .container-form__label {
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(15 / 768 * 100vw);
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .container-form__input:focus ~ .container-form__label,
+    .container-form__input:not(:placeholder-shown) ~ .container-form__label {
+        top: 5%;
+        left: calc( 10 / 768 * 100vw);
+        font-size: 24px;
+    }
+
+    .container-form__checkbox {
+        top: 0px;
+        height: 32px;
+    }
+
+    .container-form__input-checkbox {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .container-form__label-checkbox {
+        font-size: 18px;
+        line-height: 16px;
+        margin-left: calc( 32px + (calc(10 / 768 * 100vw)));
+    }
+
+    .container-form__label-checkbox::before {
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 7px;
+    }
+
+    .container-form__input-checkbox:checked + .container-form__label-checkbox::before {
+        font-size: 38px;
+        padding-left: 2px;
+        font-weight: 700;
+    }
+
+    .container-form__button {
+        top: 64px;
+        height: 80px;
+        width: 220px;
+        border-radius: 10px;
+        margin: 0 auto;
+        font-size: 32px;
+        line-height: 16px;
+    } 
+}
