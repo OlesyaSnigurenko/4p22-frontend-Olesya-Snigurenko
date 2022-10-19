@@ -211,7 +211,8 @@ body {
 
     .container {
         width: calc(100% - 40px);
-        height: calc(697 / 737 * 100vh); 
+        height: calc(697 / 768 * 100vw); 
+        min-height: 500px;
         margin: 20px;
     }
 
