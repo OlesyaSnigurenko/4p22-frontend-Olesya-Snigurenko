@@ -1,0 +1,72 @@
+<!Doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Attestation 1</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header-logo__img" src="images/1280px-IU_logo 1.png" alt="innopolis university">
+        </div>
+        <div class="header__name">
+            <h1 class="header-name__h1">PCS Frontend</h1>
+        </div>
+        <div class="header__registration">
+            <a class="header-registration__link" href="registration.html" target="blank">Регистрация</a>
+        </div>
+        <div class="header__entrance">
+            <a class="header-entrance__link" href="index.html" target="blank">Вход</a>
+        </div>
+    </header>
+    <main>
+            <form class="form" action="">
+
+                <p class="form__heading">Регистрация</p>
+
+                <div class="form__email">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" id="email" name="email" type="email" placeholder="Введите Email">
+                </div>
+
+                <div class="form__password">
+                    <label class="form__label" for="password">Пароль</label>
+                    <input class="form__input" id="password" name="password" type="password" placeholder="Введите пароль">
+                </div>
+
+                <div class="form__password-verification">
+                    <label class="form__label" for="verification">Подтверждение пароля</label>
+                    <input class="form__input" id="verification" name="verification" type="password" placeholder="Подтвердите пароль ">
+                </div>
+
+                <div class="form__radio">
+                    <p class="form__radio-heading">Пол</p>
+                    <div class="form__radio-gender">
+                        <input class="form__input_radio" id="man" name="gender" type="radio" value="man">
+                        <label class="form__label_radio" for="man">Мужчина</label>
+                    </div>
+                    <div class="form__radio-gender">
+                        <input class="form__input_radio" id="woman" name="gender" type="radio" value="woman">
+                        <label class="form__label_radio" for="woman">Женщина</label>
+                    </div>
+                </div>
+
+                <div class="form__textarea">
+                   <label class="form__label_textarea" for="textarea">О себе</label> 
+                   <textarea class="form__input_textarea" name="textarea" id="textarea" placeholder="Расскажите о себе..."></textarea> 
+                </div>
+
+                <div class="form__checkbox">
+                    <input class="form__input_checkbox" id="checkbox" name="checkbox" type="checkbox" required>
+                    <label class="form__label_checkbox" for="checkbox">Я согласен получать обновления на почту</label>
+                </div>
+
+                <button class="form__button">Регистрация</button>
+            </form>
+    </main>
+</body>
