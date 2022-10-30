@@ -13,8 +13,8 @@ body {
 
 .calculator-form{
     background-color: #218359;
-    width: calc(500/1440*100vw);
-    height: calc(680/1440*100vw);
+    width: max(calc(500/1440*100vw), 250px);
+    height: max(calc(680/1440*100vw), 340px);
     margin: calc(50/1440*100vw) auto;
     padding: 0 calc(45/1440*100vw);
     box-shadow: 0px 0px 14px 8px #0e442e;
@@ -26,8 +26,8 @@ body {
     color: #f9d876;
     text-shadow: 1px 1px 2px #0e442e; 
     font-family: 'Press Start 2P', cursive, sans-serif;
-    font-size: calc(32/1440*100vw);
-    margin: calc(35/1440*100vw) auto calc(30/1440*100vw);
+    font-size: max(calc(32/1440*100vw), 16px);
+    margin: 1.1em auto 0.9em;
     display: flex;
     justify-content: center;
 }
@@ -39,10 +39,10 @@ body {
 .calculator-form__input {
     width: 100%;
     height: 2.5em;
-    margin: calc(15/1440*100vw) 0 calc(15/1440*100vw);
-    padding-left: calc(12/1440*100vw);
+    margin: 0.6em 0;
+    padding-left: 0.5em;
     font-family: 'Press Start 2P', cursive, sans-serif;
-    font-size: calc(24/1440*100vw);
+    font-size: max(calc(24/1440*100vw), 12px);
     line-height: calc(36/1440*100vw);
     border: 3px solid #0e442e;
     outline: none;
@@ -56,7 +56,7 @@ body {
 
 .calculator-form__result-text{
     font-family: 'Press Start 2P', cursive, sans-serif;
-    font-size: calc(24/1440*100vw);
+    font-size: max(calc(24/1440*100vw), 12px);
     color: #f9d876;
     text-shadow: 1px 1px 2px #0e442e;
     display: flex;
@@ -68,12 +68,12 @@ body {
     height: auto;
     min-height: 2.5em;
     font-family: 'Press Start 2P', cursive, sans-serif;
-    font-size: calc(26/1440*100vw);
+    font-size: max(calc(24/1440*100vw), 12px);
     line-height: calc(36/1440*100vw);
     background-color:#dfeeea;
     border: 3px solid #0e442e;
-    margin: calc(10/1440*100vw) auto;
-    padding: 0 calc(12/1440*100vw);
+    margin: 0.4em auto;
+    padding: 0 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,9 +85,9 @@ body {
     outline: none;
     border: none;
     font-family: 'Press Start 2P', cursive, sans-serif;
-    font-size: calc(26/1440*100vw);
+    font-size: max(calc(24/1440*100vw), 12px);
     line-height: calc(36/1440*100vw);
     width: 70%;
     height: 3em;
-    margin: calc(25/1440*100vw) auto;
+    margin: 1em auto;
 } 
