@@ -50,7 +50,7 @@ resultButton.addEventListener('click', (event) => {
         document.getElementById('result').innerHTML = result;
       } else {
         console.log(result);
-        document.getElementById('result').innerHTML = result.toFixed(7);
+        document.getElementById('result').innerHTML = Number(result.toFixed(7));
       }
 }
 )
