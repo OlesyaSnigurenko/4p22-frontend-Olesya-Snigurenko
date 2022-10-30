@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #8fe0bd;
+    width: 100%;
+    height: 100vh;
+}
+
+.calculator-form{
+    background-color: #218359;
+    width: calc(500/1440*100vw);
+    height: calc(680/1440*100vw);
+    margin: calc(50/1440*100vw) auto;
+    padding: 0 calc(45/1440*100vw);
+    box-shadow: 0px 0px 14px 8px #0e442e;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-form__heading {
+    color: #f9d876;
+    text-shadow: 1px 1px 2px #0e442e; 
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: calc(32/1440*100vw);
+    margin: calc(35/1440*100vw) auto calc(30/1440*100vw);
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-form__first-number, .calculator-form__operator, .calculator-form__second-number {
+    position: relative;
+}
+
+.calculator-form__input {
+    width: 100%;
+    height: 2.5em;
+    margin: calc(15/1440*100vw) 0 calc(15/1440*100vw);
+    padding-left: calc(12/1440*100vw);
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: calc(24/1440*100vw);
+    line-height: calc(36/1440*100vw);
+    border: 3px solid #0e442e;
+    outline: none;
+    background-color: #dfeeea;;
+}
+
+.calculator-form__label {
+    position: absolute;
+    opacity: 0;
+}
+
+.calculator-form__result-text{
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: calc(24/1440*100vw);
+    color: #f9d876;
+    text-shadow: 1px 1px 2px #0e442e;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-form__result{
+    width: 100%;
+    height: auto;
+    min-height: 2.5em;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: calc(26/1440*100vw);
+    line-height: calc(36/1440*100vw);
+    background-color:#dfeeea;
+    border: 3px solid #0e442e;
+    margin: calc(10/1440*100vw) auto;
+    padding: 0 calc(12/1440*100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calculator-form__button {
+    background: #0e442e;
+    color: #f9d876;
+    outline: none;
+    border: none;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: calc(26/1440*100vw);
+    line-height: calc(36/1440*100vw);
+    width: 70%;
+    height: 3em;
+    margin: calc(25/1440*100vw) auto;
+} 
