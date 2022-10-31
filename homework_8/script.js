@@ -9,16 +9,16 @@ resultButton.addEventListener('click', (event) => {
     const secondNumber = document.getElementById('second-number').value;
     let result;
 
-    if (firstNumber === '' || String(firstNumber).trim() === '') {
+    if (firstNumber === '' || firstNumber.trim() === '') {
         result = 'Первое число не указано';
         } 
-    else if (secondNumber === '' || String(secondNumber).trim() === '') {
+    else if (secondNumber === '' || secondNumber.trim() === '') {
         result = 'Второе число не указано';
         }
     else if (isNaN(firstNumber) || isNaN(secondNumber)) {
         result = 'Число указано не верно';
         }
-    else if (secondNumber === '0' && operator === '/') {
+    else if (secondNumber == Number(0) && operator === '/') {
         result = 'Операция не корректна';
         }
     else {
@@ -44,7 +44,7 @@ resultButton.addEventListener('click', (event) => {
         }   
     }
     if (
-        isNaN(result) || Number.isInteger(result)
+        isNaN(result)
       ) {
         console.log(result);
         document.getElementById('result').innerHTML = result;
