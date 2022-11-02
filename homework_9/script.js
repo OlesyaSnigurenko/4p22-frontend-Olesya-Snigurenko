@@ -1,11 +1,10 @@
 'use strict'
 
 function makeFibonacciFunction() { 
-    let a = 0;
+    let a = -1;
     let b = 1;
     let c;
-    console.log(a);
-    console.log(b);
+    
     return function() {
         c = a + b;
         a = b;
@@ -23,5 +22,6 @@ console.log(fibonacci());
 console.log(fibonacci()); 
 console.log(fibonacci()); 
 console.log(fibonacci()); 
-console.log(fibonacci()); 
+console.log(fibonacci());
+console.log(fibonacci());
 
